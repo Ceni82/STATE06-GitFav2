@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  :root {
+     
+    font-size: 62.5%;
+
+    --text-color: white;
+    --titleTable-color: #092D38;
+
+    --tables01:#2F2F33;
+    --borders-button: #4A808C;
+
+  }
+  
+  body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+ 
+
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  #app {
+    padding: 2rem;
+    max-width: 1120px;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  header img{
+    width: 186.28px;
+    height: 32.75px;
+
+  }
+
+  .search {
+    display:flex;
+    align-items: center;
+    gap:.8rem;
+  }
+
+  .search input{
+    height: 3.5rem;
+    width: 40.0rem;
+    border-radius: 5px;
+    padding: 0 .8rem;
+    background: #06181C;
+    color:var(--text-color);
+    
+  }
+
+  .search button{
+    background-color: var(--borders-button);
+    height: 3.5rem;
+    width: 17.0rem;
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:.8rem;
+   
+
+    padding: 12px 32px;
+    
+
+    color:var(--text-color);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    cursor: pointer;
+  }
+
+  .search button img{
+    width: 18px;
+    height: 18px;
+  }
+   
+
+  .search button:hover{
+    filter:brightness(1.1)
+  }
+
+  table{
+    width:100%;
+    border-collapse: collapse;
+   
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    
+  }
+ 
+
+  table * {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+  }
+
+
+  table th {
+    background-color: var(--titleTable-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+  }
+
+  table th:first-child {
+    border-top-left-radius: .4rem;
+  }
+  table th:last-child {
+    border-top-right-radius: .4rem;
+  }
+
+  table tr{
+    background-color:rgba(6, 22, 27, 0.5);
+  
+  }
+  table tr:nth-child(odd){
+    background-color:var(--tables01);
+  }
+
+
+  table td{
+    padding: 1.5rem;
+    text-align:left;
+  }
+
+  td.user{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+  }
+
+
+
+  td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit:over;
+    border-radius: 50%;
+  }
+
+  td.user a {
+    text-decoration: none;
+  }
+
+  td.user a p {
+    font-weight: bold;
+  }
+
+  td .remove {
+    background: none;
+    border:none;
+    color:red;
+    cursor: pointer;
+  }
+
