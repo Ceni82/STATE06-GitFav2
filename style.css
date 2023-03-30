@@ -42,32 +42,55 @@
   #app {
     padding: 2rem;
     max-width: 1120px;
-    margin: 0 auto;
-    
+    margin: 11.5rem auto;
+    /*border:1px solid yellow;*/
   }
   
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 8.7rem;
+   
+
+    
   }
 
   header img{
-    width: 186.28px;
-    height: 32.75px;
+    width: 18.6rem;
+    height: 3.2rem;
+    
 
   }
 
   .search {
     display:flex;
     align-items: center;
+    justify-content: space-around;
     gap:.8rem;
+    width: 64rem;
+
+  
   }
+
+  @media (max-width: 600px) {
+    .text_button{
+      display:none;
+    
+     
+    }
+   
+    
+
+    }
+
+    
+
 
   .search input{
     height: 3.5rem;
-    width: 40.0rem;
+    width: 100%;
+    margin: 0  0  0 3.5rem;
     border-radius: 5px;
     padding: 0 .8rem;
     background: #06181C;
@@ -78,31 +101,31 @@
   .search button{
     background-color: var(--borders-button);
     height: 3.5rem;
-    width: 17.0rem;
+
     border: none;
     border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:.8rem;
+
    
 
-    padding: 12px 32px;
+    padding: 1.2rem 3.2rem;
     
 
     color:var(--text-color);
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    gap:.8rem;
 
     cursor: pointer;
   }
 
   .search button img{
-    width: 18px;
-    height: 18px;
+    width: 2rem;
+    height: 2rem;
   }
    
 
@@ -110,12 +133,31 @@
     filter:brightness(1.1)
   }
 
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 10px;
+  }
+  
+  .favList {
+    height: 62rem;
+    overflow-y: scroll;
+    }
+ 
   table{
     width:100%;
     border-collapse: collapse;
-   
-
-    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    
+    border-radius: 1.2rem;
+    overflow: hidden;
+    
     
   }
  
@@ -133,10 +175,12 @@
     text-align: left;
     font-weight: normal;
     padding: 1.5rem;
+    
   }
 
   table th:first-child {
     border-top-left-radius: .4rem;
+    
   }
   table th:last-child {
     border-top-right-radius: .4rem;
@@ -144,7 +188,10 @@
 
   table tr{
     background-color:rgba(6, 22, 27, 0.5);
-  
+    border: 2px solid var(--borders-button);
+    border-radius: 1.2rem;
+
+    
   }
   table tr:nth-child(odd){
     background-color:var(--tables01);
@@ -173,10 +220,12 @@
 
   td.user a {
     text-decoration: none;
+    color: white;
   }
 
   td.user a p {
     font-weight: bold;
+    
   }
 
   td .remove {
