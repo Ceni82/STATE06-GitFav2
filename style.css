@@ -95,7 +95,7 @@
   .search button svg{
     height: 3.5rem;
   }
-  .search button svg:hover{
+  .search button svg rect:hover{
     fill:white;
     
   }
@@ -258,6 +258,8 @@ td .remove {
     display:none;
   }
   
+/****MEDIA QUERY***/
+
 
   @media (max-width: 600px) {
    
@@ -307,5 +309,16 @@ td .remove {
         padding:.6rem
 
     
+      }
+
+      td.user img {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
+      }
+
+      thead tr, th:nth-child(1){
+        padding-left: 2.5rem;
+        
       }
   }
