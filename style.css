@@ -53,8 +53,7 @@
 
  .imgTitle img{
     width: 18.6rem;
-  
-    
+    height: 3.2rem;
  
   }
 
@@ -67,7 +66,14 @@
   
   }
 
-  
+  @media (max-width: 600px) {
+    .text_button{
+      display:none;
+    }
+ 
+    }
+
+    
 
 
   .search input{
@@ -88,7 +94,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+   
 
   }
 
@@ -161,12 +167,13 @@
 table tr{
     background:#06181C;
   }
+*/
+ 
 
 table tr:nth-child(odd){
     background: rgba(6, 22, 27, 0.5);
    
   }
- 
 
  table th, td{
   border-bottom: .1rem solid var(--borders-button);
@@ -232,80 +239,3 @@ td .remove {
     cursor: pointer;
   }
 
-
-  .noFriends{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
-  }
-  .noFavorites{
-    padding-top:25rem;
-
-    font-weight: 700;
-    font-size: 2.4rem;
-    display: flex;
-   
-    align-items: center;
-    justify-content:center;
-    gap:4rem;
-    color: #4E5455;
-   
-    
-  }
-
-  .hide {
-    display:none;
-  }
-  
-
-  @media (max-width: 600px) {
-   
-  
-
-    #titleResponsive{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 3rem;
-
-
-    }
-
-    .search{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      width: auto;
-      margin-top:2rem;
-      gap:.6rem;
- 
-    }
-
-    .search input{
-      margin:auto;
-    }
-
-    .search button{
-      width: 50%;
-    }
-    .imgTitle img{
-      width: 25.6rem;
-
-    }
-     #app{
-        margin-top: 3rem;
-      }
-    
-      td{
-        padding: .5rem;
-        text-align:left;
-      }
-    
-      table th{
-        font-size: auto;
-        padding:.6rem
-
-    
-      }
-  }
