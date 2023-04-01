@@ -51,9 +51,9 @@
 
   }
 
-  header img{
+ .imgTitle img{
     width: 18.6rem;
-    height: 3.2rem;
+  
     
  
   }
@@ -62,28 +62,12 @@
     display:flex;
     align-items: center;
     justify-content: space-around;
-    gap:.8rem;
+   
     width: 64rem;
   
   }
 
-  @media (max-width: 600px) {
-    .text_button{
-      display:none;
-    }
   
-    .search button{
-      width: 1rem;
-    }
-
-    header img{
-      width: 12.6rem;
-      height: auto;
-      
-   
-    }
-
-  }   
 
 
   .search input{
@@ -98,37 +82,24 @@
   }
 
   .search button{
-    background-color: var(--titleTable-color);
-    height: 3.5rem;
-    border: none;
-    border-radius: .5rem;
+    all: unset;
+    cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
-   
 
-    padding: 1.2rem 3.2rem;
+
+  }
+
+  .search button svg{
+    height: 3.5rem;
+  }
+  .search button svg:hover{
+    fill:white;
+    
+  }
   
-
-    color:var(--text-color);
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.2rem;
-    gap:.8rem;
-
-    cursor: pointer;
-  }
-
-  .search button img{
-    width: 1.8rem;
-    height: 2rem;
-  }
-   
-
-  .search button:hover{
-    filter:brightness(1.1)
-  }
 
 /******* FORM *******/
  
@@ -166,16 +137,15 @@
 
 /****** TABLES ****/
  table {
-  width: 100%;
+  width:100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+
 
 }
 
-  table * {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.2rem;
 
-  }
 
 
   table th {
@@ -185,15 +155,8 @@
     padding:2.5rem;
     
   }
-/*
-  table th:first-child {
-    border-top-left-radius: .4rem;
-   
-  }
-  table th:last-child {
-    border-top-right-radius: .4rem;
-  }
-*/
+
+
 
 table tr{
     background:#06181C;
@@ -204,10 +167,6 @@ table tr:nth-child(odd){
    
   }
  
-  
-
-
-
 
  table th, td{
   border-bottom: .1rem solid var(--borders-button);
@@ -230,7 +189,7 @@ tbody th {
   }
 
 
-   td{
+  td{
     padding: 1.5rem;
     text-align:left;
   }
@@ -295,7 +254,58 @@ td .remove {
     
   }
 
-  .hide{
+  .hide {
     display:none;
   }
   
+
+  @media (max-width: 600px) {
+   
+  
+
+    #titleResponsive{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+
+
+    }
+
+    .search{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      margin-top:2rem;
+      gap:.6rem;
+ 
+    }
+
+    .search input{
+      margin:auto;
+    }
+
+    .search button{
+      width: 50%;
+    }
+    .imgTitle img{
+      width: 25.6rem;
+
+    }
+     #app{
+        margin-top: 3rem;
+      }
+    
+      td{
+        padding: .5rem;
+        text-align:left;
+      }
+    
+      table th{
+        font-size: auto;
+        padding:.6rem
+
+    
+      }
+  }

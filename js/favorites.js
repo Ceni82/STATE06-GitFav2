@@ -125,6 +125,7 @@ export class FavoritesView extends Favorites {
     update() {
         this.removeAllTr()
         this.no_Friends()
+     
       
       
         this.entries.forEach( user => {
@@ -171,4 +172,9 @@ export class FavoritesView extends Favorites {
       }
     }
 
-}
+  
+
+   
+
+}   
+
