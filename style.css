@@ -54,6 +54,7 @@
   header img{
     width: 18.6rem;
     height: 3.2rem;
+    
  
   }
 
@@ -70,10 +71,19 @@
     .text_button{
       display:none;
     }
- 
+  
+    .search button{
+      width: 1rem;
     }
 
-    
+    header img{
+      width: 12.6rem;
+      height: auto;
+      
+   
+    }
+
+  }   
 
 
   .search input{
@@ -95,7 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+   
 
     padding: 1.2rem 3.2rem;
   
@@ -126,12 +136,13 @@
 
 /******* SCROLLBAR ***/
 .favList {
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     border: .1rem solid var(--borders-button);
     max-width: auto;
     overflow: overlay;  
-
-    height: 62rem;
+    height: 58rem;
+    
+    position: relative;
 }
 
 .favList::-webkit-scrollbar {
@@ -183,12 +194,20 @@
     border-top-right-radius: .4rem;
   }
 */
- 
+
+table tr{
+    background:#06181C;
+  }
 
 table tr:nth-child(odd){
-    background-color:var(--tables01); 
+    background: rgba(6, 22, 27, 0.5);
    
   }
+ 
+  
+
+
+
 
  table th, td{
   border-bottom: .1rem solid var(--borders-button);
@@ -254,3 +273,29 @@ td .remove {
     cursor: pointer;
   }
 
+
+  .noFriends{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .noFavorites{
+    padding-top:25rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    display: flex;
+   
+    align-items: center;
+    justify-content:center;
+    gap:4rem;
+    color: #4E5455;
+   
+    
+  }
+
+  .hide{
+    display:none;
+  }
+  

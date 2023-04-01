@@ -19,7 +19,7 @@ export class Favorites {
     constructor (root) {
         this.root = document.querySelector(root)
         this.load()
-
+        
      
     }
 
@@ -67,6 +67,7 @@ export class Favorites {
       this.update() 
       this.save()
       
+      
     }
 }
 
@@ -78,6 +79,7 @@ export class FavoritesView extends Favorites {
 
         this.update()
         this.onadd()
+       
     }
 
     onadd () {
@@ -86,6 +88,7 @@ export class FavoritesView extends Favorites {
           const { value } = this.root.querySelector('.search input')
 
         this.add(value)
+        
       }
     }
 
@@ -121,6 +124,7 @@ export class FavoritesView extends Favorites {
 
     update() {
         this.removeAllTr()
+        this.no_Friends()
       
       
         this.entries.forEach( user => {
@@ -159,5 +163,12 @@ export class FavoritesView extends Favorites {
 
     }
 
+    no_Friends() {
+      if (this.entries.length === 0) {
+        this.root.querySelector('.noFriends').classList.remove('hide')
+      } else {
+        this.root.querySelector('.noFriends').classList.add('hide')
+      }
+    }
 
 }
