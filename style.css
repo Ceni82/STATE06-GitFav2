@@ -53,8 +53,6 @@
 
  .imgTitle img{
     width: 18.6rem;
-  
-    
  
   }
 
@@ -64,10 +62,8 @@
     justify-content: space-around;
    
     width: 64rem;
-  
+    gap:.8rem;
   }
-
-    
 
 
   .search input{
@@ -81,29 +77,46 @@
     
   }
 
-  .search button{
-    all: unset;
-    cursor: pointer;
 
+  .search button {
     display: flex;
-    align-items: center;
-    justify-content: center;
-   
-
-  }
-
-  .search button svg{
-    height: 3.5rem;
-  }
-  .search button svg rect:hover{
-    fill:white;
-    
-  }
   
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+    gap: .8rem;
+    margin: ;
+ 
+    width: 170px;
+    height:3.5rem;
+    left: 0px;
+    top: 0px;
+    color:var(--text-color);
+    background: #065E7C;
+    border-radius: .5rem;
+    
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+  
+  
+} 
+
+.search button:hover{
+  background-color: var(--text-color);
+  color:var(--borders-button);
+}
+
+.search button:hover path{
+  fill:var(--borders-button)
+}
+
 
 /******* FORM *******/
- 
-
 
 /******* SCROLLBAR ***/
 .favList {
@@ -145,18 +158,13 @@
 
 }
 
-
-
-
-  table th {
+table th {
     background-color: var(--titleTable-color);
     text-align: left;
     font-weight:bold;
     padding:2.5rem;
     
   }
-
-
 
 table tr{
     background:#06181C;
