@@ -1,7 +1,7 @@
 # 
 # STATE 06 - Projeto final do módulo - "GitFav"
 
-Utilizando as skills apresentadas até agora, tivemos como desavio criar uma aplicação para cadastrar os favoritos do Github;
+Utilizando as skills apresentadas até agora, tivemos como desafio criar uma aplicação para cadastrar os favoritos do Github;
  
 
 
